@@ -1,5 +1,6 @@
 import sys
 import bcrypt
+from cliente import Cliente
 
 from PyQt5.QtGui import QPixmap, QFont
 from PyQt5.QtWidgets import QMainWindow, QDesktopWidget, QLabel, QHBoxLayout, QApplication, QFormLayout, QPushButton, \
@@ -389,23 +390,6 @@ class Ventana1(QMainWindow):
         # indicamos que el layout principal del fondo es horizontal
         self.fondo.setLayout(self.horizontal)
 
-
-    def accion_botonLimpiar(self):
-        self.nombreCompleto.setText('')
-        self.usuario.setText('')
-        self.password.setText('')
-        self.password2.setText('')
-        self.documento.setText('')
-        self.correo.setText('')
-        self.pregunta1.setText('')
-        self.respuesta1.setText('')
-        self.pregunta2.setText('')
-        self.respuesta2.setText('')
-        self.pregunta3.setText('')
-        self.respuesta3.setText('')
-
-    def accion_botonRegistrar(self):
-
         # Creamos la ventana de dialogo
         self.ventanaDialogo = QDialog(None, QtCore.Qt.WindowSystemMenuHint | QtCore.Qt.WindowTitleHint)
 
@@ -429,6 +413,22 @@ class Ventana1(QMainWindow):
 
         # Variable para controlar que se han ingresado los datos correctos
         self.datosCorrectos = True
+
+    def accion_botonLimpiar(self):
+        self.nombreCompleto.setText('')
+        self.usuario.setText('')
+        self.password.setText('')
+        self.password2.setText('')
+        self.documento.setText('')
+        self.correo.setText('')
+        self.pregunta1.setText('')
+        self.respuesta1.setText('')
+        self.pregunta2.setText('')
+        self.respuesta2.setText('')
+        self.pregunta3.setText('')
+        self.respuesta3.setText('')
+
+    def accion_botonRegistrar(self):
 
         # Validamos que los passwords sean iguales
         if (self.password.text() != self.password2.text()):
@@ -464,6 +464,7 @@ class Ventana1(QMainWindow):
 
             # Hacemos que la ventana de dialogo se vea
             self.ventanaDialogo.exec_()
+
         self.passwordIngresada = self.password.text().replace(" ", "")
         # Si los datos estan correcto
         if self.datosCorrectos:
@@ -479,7 +480,6 @@ class Ventana1(QMainWindow):
                         self.nombreCompleto.text() + ";" +
                         self.usuario.text() + ";" +
                         self.password.text() + ";" +
-                        self.password2.text() + ";" +
                         self.documento.text() + ";" +
                         self.correo.text() + ";" +
                         self.pregunta1.text() + ";" +
@@ -494,19 +494,90 @@ class Ventana1(QMainWindow):
             self.file.close()
 
 
-            # Abrimos en modo lectura en formato bytes
-            self.file = open('datos/clientes.txt', 'rb')
-            # Recorrer el archivo liena por lines
-            while self.file:
-                linea = self.file.readline().decode('UTF-8')
-                print(linea)
-                if linea == '': # Para cuando encuentre una linea vacia
-                    break
-            self.file.close()
+
 
 
     def accion_botonBuscar(self):
-        print("Funcion no implementada")
+        self.ventanaDialogo.setWindowTitle("Buscar preguntas de validacion")
+
+        # Abrimos en modo lectura en formato bytes
+        self.file = open('datos/clientes.txt', 'rb')
+        # Recorrer el archivo liena por lines
+        while self.file:
+            linea = self.file.readline().decode('UTF-8')
+            print(linea)
+            if linea == '':  # Para cuando encuentre una linea vacia
+                break
+        self.file.close()
+
+        # validamos que se haya ingresado el documento
+        if (self.documento.text() == ''):
+            self.datosCorrectos = False
+            # texto explicativo del error
+            self.mensaje.setText("Para buscar las preguntas debe de ingresar"
+                                 "el documento.")
+            self.ventanaDialogo.exec_()
+
+        # validar si el documento es numerico
+        if (not self.documento.text().isnumeric()):
+            self.datosCorrectos = False
+            # texto explicativo del error
+            self.mensaje.setText("El documento ingresado no es numerico"
+                                 "\nNo ingrese letras ni caracteres especiales.")
+            self.ventanaDialogo.exec_()
+            # limpiamos el campo del documento
+            self.documento.setText('')
+
+        if (self.datosCorrectos):
+            # abrimos el archivo en modo lectura
+            self.file = open('datos/clientes.txt', 'rb')
+
+            # creamos una lista vacia para guardar todos los usuarios
+            usuarios = []
+
+            while self.file:
+                linea = self.file.readline().decode('UTF-8')
+
+                # obtenemos del string una lista de 11 datos separados por ;
+                lista = linea.split(";")
+                # para pausar si ya no hay mas registros en el archivo
+                if linea == '':
+                    break
+
+                # creamos un objeto tipo cliente llamado u
+                u = Cliente(lista[0],lista[1],lista[2],lista[3],lista[4],lista[5],lista[6],lista[7],lista[8],lista[9],lista[10],)
+
+                # metemos el objeto en la lista de usuarios
+                usuarios.append(u)
+
+            self.file.close()
+
+            # ya tenemos  la lisata de usuarios con todos los usuarios
+            existeDocumento = False
+
+            # buscamos en la lista usuario por usuario si exsiste el documento
+            for u in usuarios:
+                # comparamos el documento ingresado
+                # si corresponde con el documento es el usuario corecto
+                if u.documento == self.documento.text():
+                    # mostramos las preguntas en el formulario
+                    self.pregunta1.setText(u.pregunta1)
+                    self.pregunta2.setText(u.pregunta2)
+                    self.pregunta3.setText(u.pregunta3)
+                    # indicamos que se encotro el documento
+                    existeDocumento = True
+                    break
+            # validamos si no existe un usuario con ese documento
+            if (not existeDocumento):
+                # texto explicativo del error
+                self.mensaje.setText("No existe un usuario con ese documento:\n"
+                                     + self.documento.setText())
+                self.ventanaDialogo.exec_()
+
+
+
+
+
 
 
     def accion_botonRecuperar(self):
