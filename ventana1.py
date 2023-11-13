@@ -472,43 +472,31 @@ class Ventana1(QMainWindow):
             # Abrimos el archivo en modo agregar escribidno datos en binario
             self.file = open('datos/clientes.txt', 'ab')
 
-            cifrado_contraseña = bcrypt.hashpw(self.passwordIngresada.encode(), bcrypt.gensalt())
-            # Trae el texto de los QLineEdit() y los agrupa concatenados
-            # Para escribir en el archivo en formato binario UTF-8
-            with open('datos/clientes.txt', 'ab') as file:
-                data = (
-                        self.nombreCompleto.text() + ";" +
-                        self.usuario.text() + ";" +
-                        self.password.text() + ";" +
-                        self.documento.text() + ";" +
-                        self.correo.text() + ";" +
-                        self.pregunta1.text() + ";" +
-                        self.respuesta1.text() + ";" +
-                        self.pregunta2.text() + ";" +
-                        self.respuesta2.text() + ";" +
-                        self.pregunta3.text() + ";" +
-                        self.respuesta3.text() + "\n"
-                )
-                file.write(data.encode('utf-8'))
-            # Cerrar archivo
+            self.file.write(bytes(self.nombreCompleto.text() + ";"
+                        + self.usuario.text() + ";"
+                        + self.password.text() + ";"
+                        + self.documento.text() + ";"
+                        + self.correo.text() + ";"
+                        + self.pregunta1.text() + ";"
+                        + self.respuesta1.text() + ";"
+                        + self.pregunta2.text() + ";"
+                        + self.respuesta2.text() + ";"
+                        + self.pregunta3.text() + ";"
+                        + self.respuesta3.text() + "\n", encoding='UTF-8'))
             self.file.close()
 
-
-
-
+            # Abrimos en modo lectura en formato bytes
+            self.file = open('datos/clientes.txt', 'rb')
+            # Recorrer el archivo liena por lines
+            while self.file:
+                linea = self.file.readline().decode('UTF-8')
+                if linea == '':  # Para cuando encuentre una linea vacia
+                    break
+            self.file.close()
 
     def accion_botonBuscar(self):
         self.ventanaDialogo.setWindowTitle("Buscar preguntas de validacion")
-
-        # Abrimos en modo lectura en formato bytes
-        self.file = open('datos/clientes.txt', 'rb')
-        # Recorrer el archivo liena por lines
-        while self.file:
-            linea = self.file.readline().decode('UTF-8')
-            print(linea)
-            if linea == '':  # Para cuando encuentre una linea vacia
-                break
-        self.file.close()
+        self.datosCorrectos = True
 
         # validamos que se haya ingresado el documento
         if (self.documento.text() == ''):
@@ -571,7 +559,7 @@ class Ventana1(QMainWindow):
             if (not existeDocumento):
                 # texto explicativo del error
                 self.mensaje.setText("No existe un usuario con ese documento:\n"
-                                     + self.documento.setText())
+                                     + self.documento.text())
                 self.ventanaDialogo.exec_()
 
 
