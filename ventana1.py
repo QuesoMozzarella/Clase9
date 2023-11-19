@@ -1,6 +1,7 @@
 import sys
 import bcrypt
 from cliente import Cliente
+from ventana2 import Ventana2
 
 from PyQt5.QtGui import QPixmap, QFont
 from PyQt5.QtWidgets import QMainWindow, QDesktopWidget, QLabel, QHBoxLayout, QApplication, QFormLayout, QPushButton, \
@@ -361,7 +362,7 @@ class Ventana1(QMainWindow):
         self.botonBuscar.setStyleSheet("background-color: #008845;"
                                           "color: #FFFFFF;"
                                           "padding: 10px;"
-                                          "margin-top: 40px;")
+                                          "margin-top: 10px;")
 
         self.botonBuscar.clicked.connect(self.accion_botonBuscar)
 
@@ -374,9 +375,9 @@ class Ventana1(QMainWindow):
 
         # Le ponemos los estilos
         self.botonRecuperar.setStyleSheet("background-color: #008845;"
-                                        "color: #FFFFFF;"
-                                        "padding: 10px;"
-                                        "margin-top: 40px;")
+                                          "color: #FFFFFF;"
+                                          "padding: 10px;"
+                                          "margin-top: 10px;")
 
         self.botonRecuperar.clicked.connect(self.accion_botonRecuperar)
 
@@ -386,7 +387,24 @@ class Ventana1(QMainWindow):
         # Agregamos el layout ladoDerecho al layout horizontal
         self.horizontal.addLayout(self.ladoDerecho)
 
+
+        # Hacemos el boton para continuar
+        self.botonContinuar = QPushButton("Continuar")
+        # Establecemos el ancho del boton
+        self.botonContinuar.setFixedWidth(90)
+        # Le ponemos los estilos
+        self.botonContinuar.setStyleSheet("background-color: #008845;"
+                                          "color: #FFFFFF;"
+                                          "padding: 10px;"
+                                          "margin-top: 10px;")
+
+        self.botonContinuar.clicked.connect(self.accion_botonContinuar)
+        # Agregamos los dos botones al layout ladoIzquierdo
+        self.ladoDerecho.addRow(self.botonContinuar)
+
+
         # PONER AL FINAL
+        self.horizontal.addLayout(self.ladoDerecho)
         # indicamos que el layout principal del fondo es horizontal
         self.fondo.setLayout(self.horizontal)
 
@@ -647,7 +665,7 @@ class Ventana1(QMainWindow):
                 # usamos strip() para borrar espacios y saltos de linea
                 self.respuesta1.text().lower().strip() == resp1.lower().strip() and
                 self.respuesta2.text().lower().strip() == resp2.lower().strip() and
-                self.respuesta1.text().lower().strip() == resp1.lower().strip()
+                self.respuesta3.text().lower().strip() == resp3.lower().strip()
             ):
                 # limpiamos los campos
                 self.accion_botonLimpiar()
@@ -659,6 +677,12 @@ class Ventana1(QMainWindow):
                 # escribimos el texto de error
                 self.mensaje.setText("Las respuestas son incorrectas")
                 self.ventanaDialogo.exec_()
+
+    def accion_botonContinuar(self):
+        self.hide()
+        self.ventana2 = Ventana2()
+        self.ventana2.show()
+
 
 
 
