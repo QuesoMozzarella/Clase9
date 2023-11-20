@@ -160,7 +160,7 @@ class Ventana2(QMainWindow):
         # Hacemos el boton para continuar
         self.botonVolver = QPushButton("Volver")
         # Establecemos el ancho del boton
-        self.botonVolver.setFixedWidth(90)
+        self.botonVolver.setFixedWidth(100)
         # Le ponemos los estilos
         self.botonVolver.setStyleSheet("background-color: #008845;"
                                           "color: #FFFFFF;"
@@ -171,16 +171,19 @@ class Ventana2(QMainWindow):
         # Agregamos los dos botones al layout ladoIzquierdo
         self.vertical.addWidget(self.botonVolver)
 
+        # Hacemos el boton para continuar
+        self.botonFormaTabular = QPushButton("Forma Tabular")
+        # Establecemos el ancho del boton
+        self.botonFormaTabular.setFixedWidth(100)
+        # Le ponemos los estilos
+        self.botonFormaTabular.setStyleSheet("background-color: #008845;"
+                                       "color: #FFFFFF;"
+                                       "padding: 10px;"
+                                       "margin-top: 10px;")
 
-
-
-
-
-
-
-
-
-
+        self.botonFormaTabular.clicked.connect(self.accion_botonFormaTabular)
+        # Agregamos los dos botones al layout ladoIzquierdo
+        self.vertical.addWidget(self.botonFormaTabular)
 
 
 
@@ -197,3 +200,10 @@ class Ventana2(QMainWindow):
         self.hide()
         self.ventana1 = Ventana1()
         self.ventana1.show()
+
+    def accion_botonFormaTabular(self):
+        from ventana3 import Ventana3
+        self.hide()
+        self.ventana3 = Ventana3()
+        self.ventana3.show()
+
