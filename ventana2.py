@@ -168,7 +168,7 @@ class Ventana2(QMainWindow):
                                           "margin-top: 10px;")
 
         self.botonVolver.clicked.connect(self.accion_botonVolver)
-        # Agregamos los dos botones al layout ladoIzquierdo
+        # Agregamos el boton
         self.vertical.addWidget(self.botonVolver)
 
         # Hacemos el boton para continuar
