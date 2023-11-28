@@ -193,7 +193,10 @@ class Ventana2(QMainWindow):
 
 
     def metodo_accionBotones(self, cedulaUsuario):
-        print(cedulaUsuario)
+        from ventana4 import Ventana4
+        self.hide()
+        self.ventana4 = Ventana4(self, cedulaUsuario)
+        self.ventana4.show()
 
     def accion_botonVolver(self):
         from ventana1 import Ventana1
