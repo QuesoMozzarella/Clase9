@@ -1,4 +1,46 @@
 Andres Mauricio Ramirez Valencia;Seth;paula123;1035970725;mauricioramirez4747@gmail.com;ana;banana;agua;panela;viva;petro
-Juan Alverto Posada Perez;Pepo;freddy123;1050203060;juanAPerezP@noexiste.com;cuanto es la raiz cuadrada de 169;13;acido;un placer;Cuantos pares de medias tiene el agente G?;Entre 21 y 98
+Juan Alverto Posada Perez;Pepo;freddy123;1050203060;juanAPerezP@noexiste.com;cuanto es la raiz cuadrada de 169;14;acido;un placer;Cuantos pares de medias tiene el agente G?;Entre 21 y 98
 Selene Delgado Lopez;SeleneDelgado2310;selenetejalalaspatas;1128457028;selenelopezdelgado@noexiste.com;que es ilegal en el estado de Vermont en EE. UU.?;que alguien utilize ropa de lana;sape;lokita;Adolf Hitler cuando fue canciller de Alemania?;1933
 Simón José Antonio de la Santísima Trinidad Bolívar Palacios Ponte y Blanco;SimonElLibertador;Caballoblanco;0000000001;notengo@noexiste.com;que que color era mi caballo blanco?;blanco;Nombre de mi madre;Maria de la Concepcion Palacios y Blanco;Nombre de mi abuelo paterno;Feliciano Palacios de Aguirre y Ariztia-Sojo y Gil
+Eva Carolina Vargas Ríos;EvaVargasRios;eva123;1078963456;evavargas123@noexiste.com;¿Cuál es la capital de Francia?;París;Comida favorita;Pizza;Color preferido;Azul
+Diego Alejandro Castro Gómez;DaleCastro;diego2023;1198754321;dalecastrogomez@gmail.com;¿En qué año se fundó la ONU?;1945;Nombre de tu primer mascota;Rex;¿Cuántos planetas hay en el sistema solar?;Ocho
+María Fernanda Martínez Cuéllar;MariferMC;fer12345;1023456789;marifer.mtz@noexiste.com;¿Cuál es el río más largo del mundo?;Amazonas;Deporte favorito;Fútbol;Cantante preferido;Shakira
+Carlos Eduardo Rojas Puentes;CaliRojas;carlitos987;1001100110;carlosrp@gmail.com;¿Cuántos días tiene un año bisiesto?;366;Signo zodiacal;Géminis;¿Cuál es el idioma oficial de Brasil?;Portugués
+Valentina Sánchez Herrera;ValeSanchez;vale1234;1087654321;vsanchezh@noexiste.com;¿Quién escribió "Cien años de soledad"?;Gabriel García Márquez;Lugar de vacaciones soñado;Playa;Actor favorito;Leonardo DiCaprio
+Winston Churchill;Churchill;church1940;1001759430;churchill@noexiste.com;¿Cuál es el país más grande del mundo?;Rusia;Nombre de tu primer maestro;Smith;¿Cuántos continentes hay en el mundo?;Siete
+Franklin D. Roosevelt;FDRoosevelt;franklin32;1023456908;fdroosevelt@noexiste.com;¿En qué año se firmó el Tratado de Versalles?;1919;¿Cuál es tu película favorita?;Casablanca;¿Cuál es el río más largo del mundo?;Amazonas
+Adolf Hitler;AdolfH;hitler1939;1045670321;adolfhitler@noexiste.com;¿Cuál es tu comida favorita?;Strudel;¿Qué año comenzó la Segunda Guerra Mundial?;1939;¿Cuál es el país más poblado del mundo?;China
+Benito Mussolini;Mussolini;ilDuce22;1089456123;benitomussolini@noexiste.com;¿Cuál es tu libro favorito?;El Príncipe;¿En qué año se fundó la Unión Soviética?;1922;¿Cuántos jugadores tiene un equipo de fútbol?;Once
+Joseph Stalin;JStalin;stalin1945;1065432098;jstalin@noexiste.com;¿Cuál es tu animal favorito?;Oso;¿En qué año finalizó la Primera Guerra Mundial?;1918;¿Cuál es la capital de Italia?;Roma
+Hirohito;Hirohito;emperor123;1002456789;hirohito@noexiste.com;¿Cuál es tu deporte favorito?;Sumo;¿Cuántos dientes tiene un adulto?;32;¿Quién escribió "Guerra y Paz"?;León Tolstói
+Dwight D. Eisenhower;IkeEisenhower;ike1944;1098765432;eisenhower@noexiste.com;¿Cuál es tu color favorito?;Azul;¿Cuántos años tiene un siglo?;100;¿Cuántos minutos hay en una hora?;60
+Douglas MacArthur;D-MacArthur;douglas75;1054321908;dmacarthur@noexiste.com;¿Cuál es tu bebida favorita?;Té;¿En qué año terminó la Guerra de Corea?;1953;¿Cuál es la capital de China?;Pekín
+George S. Patton;GenPatton;general77;1089654321;generalpatton@noexiste.com;¿Cuántos días tiene una semana?;Siete;¿Cuántos días tiene un año común?;365;¿En qué año se firmó el Armisticio de Compiègne?;1918
+Erwin Rommel;DesertFox;rommel41;1043201567;erwinrommel@noexiste.com;¿Cuál es tu ciudad favorita?;Berlín;¿Qué año comenzó la Segunda Guerra Mundial?;1939;¿En qué país está la Torre Eiffel?;Francia
+Georgy Zhukov;GZhukov;zhukov1950;1067894321;zhukov@noexiste.com;¿Cuál es tu película favorita?;Doctor Zhivago;¿Cuál es tu comida favorita?;Borsch;¿En qué año terminó la Segunda Guerra Mundial?;1945
+Harry S. Truman;Truman;truman33;1012345678;harrytruman@noexiste.com;¿Cuál es tu deporte favorito?;Póquer;¿Cuántas letras tiene el alfabeto inglés?;26;¿Cuál es tu color favorito?;Azul
+Paul von Hindenburg;PVHindenburg;vonhindenburg25;1087654321;hindenburg@noexiste.com;¿Cuántos continentes hay en el mundo?;Siete;¿Cuál es tu película favorita?;El acorazado Potemkin;¿Cuál es tu libro favorito?;Los hermanos Karamazov
+Charles de Gaulle;DeGaulle;degaulle40;1078943210;degaulle@noexiste.com;¿Cuál es tu animal favorito?;Gallo;¿En qué año finalizó la Segunda Guerra Mundial en Europa?;1945;¿Cuál es la capital de Francia?;París
+Emperor Gojong;Gojong;gojong1907;1032156789;gojong@noexiste.com;¿Cuál es tu deporte favorito?;Equitación;¿En qué año terminó la Guerra de Corea?;1953;¿Cuántos continentes hay en el mundo?;Siete
+Kim Il-sung;KimIlSung;kim1950;1045678901;kimilsung@noexiste.com;¿Cuál es tu bebida favorita?;Soju;¿En qué año comenzó la Guerra de Corea?;1950;¿Cuántas letras tiene el alfabeto coreano?;24
+Joseph McCarthy;JoeMcCarthy;mccarthy50;1098765432;jmccarthy@noexiste.com;¿Cuál es tu película favorita?;Senderos de gloria;¿En qué año comenzó la Guerra de Corea?;1950;¿Quién escribió "1984"?;George Orwell
+Emperador Meiji;Meiji;meiji1868;1001759430;meiji@noexiste.com;¿En qué año comenzó la Era Meiji en Japón?;1868;¿Cuál es tu comida favorita?;Sushi;¿Cuál es el nombre de tu primer ministro?;Ito Hirobumi
+Emperador Taishō;Taisho;taisho1912;1023456908;taisho@noexiste.com;¿En qué año comenzó la Era Taisho en Japón?;1912;¿Cuál es tu bebida favorita?;Té verde;¿Cuál es el nombre de tu padre?;Emperador Meiji
+Emperador Shōwa;Showa;showa1926;1045670321;showa@noexiste.com;¿En qué año comenzó la Era Shōwa en Japón?;1926;¿Cuál es tu película favorita?;El último samurái;¿Cuál es el nombre de tu esposa?;Empress Kōjun
+Emperador Akihito;Akihito;akihito1989;1065432098;akihito@noexiste.com;¿En qué año comenzó la Era Heisei en Japón?;1989;¿Cuál es tu animal favorito?;Koi;¿En qué año abdicaste al trono?;2019
+Emperador Naruhito;Naruhito;naruhito2019;1089456123;naruhito@noexiste.com;¿En qué año comenzó la Era Reiwa en Japón?;2019;¿Cuál es tu deporte favorito?;Tenis;¿Cuántos hermanos tienes?;Dos
+Mao Zedong;MaoZedong;mao1950;1056789432;maozedong@noexiste.com;¿En qué año se fundó la República Popular China?;1949;¿Cuál es tu libro favorito?;El libro rojo;¿En qué provincia naciste?;Hunan
+Deng Xiaoping;DengXiaoping;deng1978;1098765432;dengxiaoping@noexiste.com;¿En qué año se inauguraron las Reformas y la Política de Apertura en China?;1978;¿Cuál es tu película favorita?;Adiós a mi concubina;¿En qué ciudad estudiaste?;París
+Jiang Zemin;JiangZemin;jiang1989;1078943210;jiangzemin@noexiste.com;¿En qué año se hizo la transferencia de soberanía de Hong Kong a China?;1997;¿Cuál es tu comida favorita?;Pato a la pekinesa;¿Cuál es tu deporte favorito?;Natación
+Hu Jintao;HuJintao;hu2002;1032156789;hujintao@noexiste.com;¿En qué año se celebraron los Juegos Olímpicos de Beijing?;2008;¿Cuál es tu bebida favorita?;Té Oolong;¿En qué provincia naciste?;Jiangsu
+Xi Jinping;XiJinping;xi2012;1045678901;xijinping@noexiste.com;¿En qué año se propuso el proyecto de la Nueva Ruta de la Seda?;2013;¿Cuál es tu animal favorito?;Panda;¿En qué provincia naciste?;Shaanxi
+Isaac Newton;IsaacNewton;gravity123;1543234567;isaacnewton@email.com;¿Cuál es tu fruta favorita?;Manzana;¿En qué año naciste?;1643;¿Qué teoría científica desarrollaste?;La Ley de la Gravitación Universal
+Leonardo da Vinci;LeoDaVinci;art123;1509876543;leo@email.com;¿Cuál es tu animal favorito?;Pájaro;¿En qué año naciste?;1452;¿Cuál es tu obra de arte más famosa?;La Mona Lisa
+Marie Curie;MarieCurie;radio123;1578943210;marie@email.com;¿Cuál es tu bebida favorita?;Té;¿En qué año naciste?;1867;¿Qué premio Nobel ganaste?;Dos, Física y Química
+Albert Einstein;Einstein123;relativity;1598765432;einstein@email.com;¿Cuál es tu comida favorita?;Pescado;¿En qué año naciste?;1879;¿Qué teoría desarrollaste?;La Teoría de la Relatividad
+William Shakespeare;WillShakespeare;hamlet;1523456789;williamshakespeare@email.com;¿Cuál es tu color favorito?;Negro;¿En qué año naciste?;1564;¿Cuál es tu obra más famosa?;Hamlet
+Platón;Platon123;philosophy;1587654321;plato@email.com;¿Cuál es tu fruta favorita?;Uva;¿En qué año naciste?;427 a.C.;¿Qué escuela filosófica fundaste?;La Academia de Atenas
+Aristóteles;Aristoteles;metaphysics;1501234567;aristoteles@email.com;¿Cuál es tu bebida favorita?;Vino;¿En qué año naciste?;384 a.C.;¿Qué filosofía desarrollaste?;La Lógica
+Sócrates;Socrates123;wisdom;1590123456;socrates@email.com;¿Cuál es tu comida favorita?;Higos;¿En qué año naciste?;470 a.C.;¿Qué método de enseñanza utilizaste?;La Mayéutica
+Confucio;Confucio;confucianism;1543210987;confucio@email.com;¿Cuál es tu animal favorito?;Búho;¿En qué año naciste?;551 a.C.;¿Qué filosofía desarrollaste?;Confucianismo
+Napoleón Bonaparte;Napoleon;emperor123;1506943210;napoleon@email.com;¿Cuál es tu bebida favorita?;Cognac;¿En qué año naciste?;1769;¿Qué título alcanzaste?;Emperador de Francia
