@@ -1,5 +1,4 @@
 import sys
-import bcrypt
 from cliente import Cliente
 from ventana2 import Ventana2
 

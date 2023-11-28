@@ -135,7 +135,7 @@ class Ventana3(QMainWindow):
             self.tabla.setItem(self.contador, 6, QTableWidgetItem(u.respuesta1))
             self.tabla.setItem(self.contador, 7, QTableWidgetItem(u.pregunta2))
             self.tabla.setItem(self.contador, 8, QTableWidgetItem(u.respuesta2))
-            self.tabla.setItem(self.contador, 9 , QTableWidgetItem(u.pregunta3))
+            self.tabla.setItem(self.contador, 9, QTableWidgetItem(u.pregunta3))
             self.tabla.setItem(self.contador, 10, QTableWidgetItem(u.respuesta3))
             self.contador += 1
 

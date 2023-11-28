@@ -6,10 +6,8 @@ from PyQt5.QtWidgets import QMainWindow, QDesktopWidget, QLabel, QVBoxLayout, QS
     QButtonGroup, QPushButton
 
 from cliente import Cliente
-
+from ventana4 import Ventana4
 class Ventana2(QMainWindow):
-
-    # Metodo constructor de la ventana
     def __init__(self,parent=None):
         super(Ventana2,self).__init__(parent)
 
@@ -104,7 +102,7 @@ class Ventana2(QMainWindow):
         self.contador = 0
 
         # definimos la cantidad de elementos por columna
-        self.elementosPorColumna = 3
+        self.elementosPorColumna = 4
 
         # calulamos el numero de pasteles
         self.numeroFilas = math.ceil(self.numeroUsuarios / self.elementosPorColumna) + 1
@@ -193,7 +191,11 @@ class Ventana2(QMainWindow):
 
 
     def metodo_accionBotones(self, cedulaUsuario):
-        print(cedulaUsuario)
+        self.hide()
+        self.ventana4 = Ventana4(self, cedulaUsuario)
+        self.ventana4.show()
+
+
 
     def accion_botonVolver(self):
         from ventana1 import Ventana1
